@@ -12,3 +12,10 @@ sls invoke -f hello
 
 # invocar local
 sls invoke local -f hello
+
+# logs tail y en otro terminal hacer el invoke a aws para que aparezca los logs: sls invoke -f hello
+sls logs -f hello -t
+sls logs -f hello --tail
+
+# para borrar todo
+sls remove
